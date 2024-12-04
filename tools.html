@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地址生成工具 - AddressGen</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/js/main.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b">
+        <nav class="container flex items-center justify-between h-16">
+            <a href="/" class="text-2xl font-bold text-primary">AddressGen</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/#features" class="hover:text-primary">功能特点</a>
+                <a href="/#how-it-works" class="hover:text-primary">使用方法</a>
+                <a href="/#pricing" class="hover:text-primary">价格方案</a>
+                <a href="/#faq" class="hover:text-primary">常见问题</a>
+            </div>
+            <a href="/" class="btn-primary">返回首页</a>
+        </nav>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="pt-24 pb-16">
+        <div class="container">
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- 地址生成器部分 -->
+                <div class="bg-white shadow-lg rounded-xl p-8">
+                    <h2 class="text-2xl font-bold mb-6">地址生成器</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">选择国家</label>
+                            <select id="countrySelect" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                                <option value="us">美国 (United States)</option>
+                                <option value="gb">英国 (United Kingdom)</option>
+                            </select>
+                        </div>
+                        <button id="generateBtn" class="w-full btn-primary">
+                            生成地址
+                        </button>
+                        <div id="addressResult" class="mt-6 bg-gray-50 rounded-lg p-6 hidden">
+                            <!-- 结果将在这里显示 -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 免税州查询部分 -->
+                <div class="bg-white shadow-lg rounded-xl p-8">
+                    <h2 class="text-2xl font-bold mb-6">美国免税州查询</h2>
+                    <div class="space-y-6">
+                        <p class="text-gray-600">查看美国所有免税州及相关信息</p>
+                        <button id="taxFreeBtn" class="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+                            查看免税州列表
+                        </button>
+                        <div id="taxFreeResult" class="mt-6 bg-gray-50 rounded-lg p-6 hidden">
+                            <!-- 结果将在这里显示 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">关于我们</h4>
+                    <p class="text-gray-400">AddressGen是领先的国际地址生成服务提供商，致力于为用户提供高质量的地址生成解决方案。</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/#features">功能特点</a></li>
+                        <li><a href="/#pricing">价格方案</a></li>
+                        <li><a href="/#faq">常见问题</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">联系我们</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>邮箱：support@addressgen.cc</li>
+                        <li>工作时间：周一至周五 9:00-18:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">关注我们</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">微信</a>
+                        <a href="#" class="text-gray-400 hover:text-white">微博</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p> 2024 addressgen.cc 版权所有</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

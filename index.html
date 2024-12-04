@@ -1,74 +1,206 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>全球地址生成器 - 专业的地址生成工具</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>AddressGen - 专业的国际地址生成器</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
-<body class="bg-gray-50">
-    <div class="container mx-auto px-4 py-8">
-        <header class="text-center mb-8">
-            <h1 class="text-3xl font-bold text-gray-800 mb-2">全球地址生成器</h1>
-            <p class="text-gray-600">生成真实可用的地址数据</p>
-        </header>
-
-        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-6">
-            <div class="mb-6">
-                <div class="flex gap-4 mb-4">
-                    <input type="text" id="city" class="flex-1 p-2 border rounded" placeholder="输入城市名称（可选）">
-                    <button id="search_btn" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">
-                        生成地址
-                    </button>
-                </div>
-                <div class="flex gap-2 justify-end">
-                    <button id="save-address" class="bg-green-500 text-white px-4 py-1 rounded text-sm hover:bg-green-600">
-                        保存地址
-                    </button>
-                    <button id="for-us-btn-2" class="bg-purple-500 text-white px-4 py-1 rounded text-sm hover:bg-purple-600">
-                        随机地址
-                    </button>
-                </div>
+<body>
+    <!-- 导航栏 -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b">
+        <nav class="container flex items-center justify-between h-16">
+            <a href="#" class="text-2xl font-bold text-primary">AddressGen</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#features" class="hover:text-primary">功能特点</a>
+                <a href="#how-it-works" class="hover:text-primary">使用方法</a>
+                <a href="#pricing" class="hover:text-primary">价格方案</a>
+                <a href="#faq" class="hover:text-primary">常见问题</a>
             </div>
+            <a href="/tools.html" class="btn-primary">立即使用</a>
+        </nav>
+    </header>
 
-            <div class="space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">全名</label>
-                        <input type="text" class="data_Full_Name w-full p-2 border rounded" readonly>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">性别</label>
-                        <input type="text" class="data_Gender w-full p-2 border rounded" readonly>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">生日</label>
-                        <input type="text" class="data_Birthday w-full p-2 border rounded" readonly>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">职位</label>
-                        <input type="text" class="data_Title w-full p-2 border rounded" readonly>
-                    </div>
+    <!-- Hero区域 -->
+    <section class="section pt-32 bg-gradient-to-b from-blue-50">
+        <div class="container text-center">
+            <h1 class="text-5xl font-bold mb-6">生成真实可用的国际地址</h1>
+            <p class="text-xl text-gray-600 mb-8">支持美国、英国、日本、新加坡、加拿大等多个国家，智能生成符合当地特点的真实地址</p>
+            <a href="/tools.html" class="btn-primary text-lg">开始生成地址</a>
+        </div>
+    </section>
+
+    <!-- 功能特点 -->
+    <section id="features" class="section bg-white">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-12">核心功能</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-xl bg-gray-50">
+                    <h3 class="text-xl font-semibold mb-4">多国支持</h3>
+                    <p>支持美国（含免税州）、英国、日本、新加坡、加拿大等多个国家的地址生成</p>
                 </div>
-
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">地址</label>
-                    <textarea class="data_Address w-full p-2 border rounded" rows="3" readonly></textarea>
+                <div class="p-6 rounded-xl bg-gray-50">
+                    <h3 class="text-xl font-semibold mb-4">完整信息</h3>
+                    <p>包含姓名、性别、年龄、邮箱、详细地址、职业、体重、爱好等完整个人信息</p>
                 </div>
-
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">电话</label>
-                    <input type="text" class="data_Phone w-full p-2 border rounded" readonly>
+                <div class="p-6 rounded-xl bg-gray-50">
+                    <h3 class="text-xl font-semibold mb-4">真实可用</h3>
+                    <p>所有生成的地址均符合当地特点，可用于各类平台验证</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="mt-8 text-center">
-            <h2 id="index-title" class="text-xl font-semibold text-gray-800">美国地址</h2>
+    <!-- 使用方法 -->
+    <section id="how-it-works" class="section bg-gray-50">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-12">使用方法</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4">1</div>
+                    <h3 class="font-semibold mb-2">选择国家</h3>
+                    <p class="text-gray-600">选择需要生成地址的目标国家</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4">2</div>
+                    <h3 class="font-semibold mb-2">设置选项</h3>
+                    <p class="text-gray-600">配置所需的个人信息选项</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4">3</div>
+                    <h3 class="font-semibold mb-2">生成地址</h3>
+                    <p class="text-gray-600">一键生成符合要求的完整地址</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4">4</div>
+                    <h3 class="font-semibold mb-2">复制使用</h3>
+                    <p class="text-gray-600">复制生成的地址即可使用</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <script src="js/address-data.js" type="module"></script>
-    <script src="js/address-generator.js" type="module"></script>
+    <!-- 价格方案 -->
+    <section id="pricing" class="section bg-white">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-12">价格方案</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border rounded-xl p-8">
+                    <h3 class="text-xl font-semibold mb-4">基础版</h3>
+                    <p class="text-3xl font-bold mb-4">¥0<span class="text-base font-normal">/月</span></p>
+                    <ul class="space-y-3 mb-8">
+                        <li>✓ 支持基础国家地址生成</li>
+                        <li>✓ 每日10次生成限制</li>
+                        <li>✓ 基础客服支持</li>
+                    </ul>
+                    <a href="/tools.html" class="w-full btn-primary block text-center">开始使用</a>
+                </div>
+                <div class="border rounded-xl p-8 bg-primary text-white transform scale-105">
+                    <h3 class="text-xl font-semibold mb-4">专业版</h3>
+                    <p class="text-3xl font-bold mb-4">¥99<span class="text-base font-normal">/月</span></p>
+                    <ul class="space-y-3 mb-8">
+                        <li>✓ 支持所有国家地址生成</li>
+                        <li>✓ 无限次数生成</li>
+                        <li>✓ 优先客服支持</li>
+                        <li>✓ API接口支持</li>
+                    </ul>
+                    <button class="w-full bg-white text-primary btn-primary">立即升级</button>
+                </div>
+                <div class="border rounded-xl p-8">
+                    <h3 class="text-xl font-semibold mb-4">企业版</h3>
+                    <p class="text-3xl font-bold mb-4">¥299<span class="text-base font-normal">/月</span></p>
+                    <ul class="space-y-3 mb-8">
+                        <li>✓ 所有专业版功能</li>
+                        <li>✓ 批量生成功能</li>
+                        <li>✓ 24/7专属支持</li>
+                        <li>✓ 自定义功能开发</li>
+                    </ul>
+                    <button class="w-full btn-primary">联系我们</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 用户评价 -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-12">用户评价</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl">
+                    <p class="mb-4">"地址生成器帮我解决了很多跨境电商测试的问题，生成的地址都非常真实可用。"</p>
+                    <p class="font-semibold">张先生</p>
+                    <p class="text-gray-600">电商从业者</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl">
+                    <p class="mb-4">"使用体验非常好，界面简洁，操作方便，生成的地址质量很高。"</p>
+                    <p class="font-semibold">李女士</p>
+                    <p class="text-gray-600">软件测试工程师</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl">
+                    <p class="mb-4">"API接口稳定性很好，已经集成到我们的系统中，效果很不错。"</p>
+                    <p class="font-semibold">王先生</p>
+                    <p class="text-gray-600">技术总监</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section id="faq" class="section bg-white">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-12">常见问题</h2>
+            <div class="space-y-6 max-w-3xl mx-auto">
+                <div class="border-b pb-4">
+                    <h3 class="text-xl font-semibold mb-2">生成的地址是否可以用于实际收货？</h3>
+                    <p class="text-gray-600">我们生成的地址仅用于测试用途，不建议用于实际收货地址。</p>
+                </div>
+                <div class="border-b pb-4">
+                    <h3 class="text-xl font-semibold mb-2">支持哪些国家的地址生成？</h3>
+                    <p class="text-gray-600">目前支持美国、英国、日本、新加坡、加拿大等主要国家，并持续增加中。</p>
+                </div>
+                <div class="border-b pb-4">
+                    <h3 class="text-xl font-semibold mb-2">如何获取API接口？</h3>
+                    <p class="text-gray-600">升级到专业版或企业版后，可以获取API接口的访问权限。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">关于我们</h4>
+                    <p class="text-gray-400">AddressGen是领先的国际地址生成服务提供商，致力于为用户提供高质量的地址生成解决方案。</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features">功能特点</a></li>
+                        <li><a href="#pricing">价格方案</a></li>
+                        <li><a href="#faq">常见问题</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">联系我们</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>邮箱：support@addressgen.cc</li>
+                        <li>工作时间：周一至周五 9:00-18:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">关注我们</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">微信</a>
+                        <a href="#" class="text-gray-400 hover:text-white">微博</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p> 2024 addressgen.cc 版权所有</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
