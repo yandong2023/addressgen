@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "buildCommand": "npm run build",
     "builds": [
         {
             "src": "server.js",
@@ -14,14 +15,25 @@
             "use": "@vercel/static"
         },
         {
-            "src": "style.css",
+            "src": "*.css",
             "use": "@vercel/static"
         }
     ],
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "server.js"
+            "dest": "/server.js"
+        },
+        {
+            "src": "/style.css",
+            "dest": "/style.css"
+        },
+        {
+            "src": "/js/(.*)",
+            "dest": "/js/$1"
+        },
+        {
+            "handle": "filesystem"
         },
         {
             "src": "/(.*)",

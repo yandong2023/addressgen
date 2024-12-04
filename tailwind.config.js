@@ -1,13 +1,18 @@
+/** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./*.html",
+    "./js/**/*.js",
   ],
   theme: {
     extend: {
       colors: {
         primary: '#0077ED',
         secondary: '#00A3FF',
+      },
+      container: {
+        center: true,
+        padding: '1rem',
       },
     },
   },
