@@ -1,0 +1,17 @@
+[
+    {"name": "北海道", "abbreviation": "HKD"},
+    {"name": "東京都", "abbreviation": "TKY"},
+    {"name": "大阪府", "abbreviation": "OSK"},
+    {"name": "京都府", "abbreviation": "KYT"},
+    {"name": "神奈川県", "abbreviation": "KNG"},
+    {"name": "愛知県", "abbreviation": "ACH"},
+    {"name": "福岡県", "abbreviation": "FKO"},
+    {"name": "千葉県", "abbreviation": "CHB"},
+    {"name": "兵庫県", "abbreviation": "HYG"},
+    {"name": "埼玉県", "abbreviation": "STM"},
+    {"name": "静岡県", "abbreviation": "SZO"},
+    {"name": "広島県", "abbreviation": "HRS"},
+    {"name": "宮城県", "abbreviation": "MYG"},
+    {"name": "福島県", "abbreviation": "FKS"},
+    {"name": "茨城県", "abbreviation": "IBR"}
+]

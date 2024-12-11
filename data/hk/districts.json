@@ -1,0 +1,20 @@
+[
+    {"name": "中西区", "abbreviation": "CW"},
+    {"name": "湾仔区", "abbreviation": "WC"},
+    {"name": "东区", "abbreviation": "EA"},
+    {"name": "南区", "abbreviation": "SO"},
+    {"name": "油尖旺区", "abbreviation": "YTM"},
+    {"name": "深水埗区", "abbreviation": "SSP"},
+    {"name": "九龙城区", "abbreviation": "KLC"},
+    {"name": "观塘区", "abbreviation": "KT"},
+    {"name": "黄大仙区", "abbreviation": "WTS"},
+    {"name": "沙田区", "abbreviation": "ST"},
+    {"name": "大埔区", "abbreviation": "TP"},
+    {"name": "北区", "abbreviation": "NO"},
+    {"name": "元朗区", "abbreviation": "YL"},
+    {"name": "屯门区", "abbreviation": "TM"},
+    {"name": "荃湾区", "abbreviation": "TW"},
+    {"name": "葵青区", "abbreviation": "KC"},
+    {"name": "西贡区", "abbreviation": "SK"},
+    {"name": "离岛区", "abbreviation": "IS"}
+]

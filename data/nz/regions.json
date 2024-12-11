@@ -1,0 +1,18 @@
+[
+    {"name": "Auckland", "abbreviation": "AUK"},
+    {"name": "Wellington", "abbreviation": "WGN"},
+    {"name": "Canterbury", "abbreviation": "CAN"},
+    {"name": "Waikato", "abbreviation": "WKO"},
+    {"name": "Bay of Plenty", "abbreviation": "BOP"},
+    {"name": "Otago", "abbreviation": "OTA"},
+    {"name": "Manawatu-Wanganui", "abbreviation": "MWT"},
+    {"name": "Northland", "abbreviation": "NTL"},
+    {"name": "Hawke's Bay", "abbreviation": "HKB"},
+    {"name": "Taranaki", "abbreviation": "TKI"},
+    {"name": "Southland", "abbreviation": "STL"},
+    {"name": "Nelson", "abbreviation": "NSN"},
+    {"name": "Marlborough", "abbreviation": "MBH"},
+    {"name": "Gisborne", "abbreviation": "GIS"},
+    {"name": "West Coast", "abbreviation": "WTC"},
+    {"name": "Tasman", "abbreviation": "TAS"}
+]

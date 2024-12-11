@@ -1,0 +1,17 @@
+[
+    {"name": "กรุงเทพมหานคร", "abbreviation": "BKK"},
+    {"name": "นนทบุรี", "abbreviation": "NTB"},
+    {"name": "ปทุมธานี", "abbreviation": "PTE"},
+    {"name": "สมุทรปราการ", "abbreviation": "SPK"},
+    {"name": "เชียงใหม่", "abbreviation": "CMI"},
+    {"name": "ภูเก็ต", "abbreviation": "PKT"},
+    {"name": "ชลบุรี", "abbreviation": "CBI"},
+    {"name": "เชียงราย", "abbreviation": "CRI"},
+    {"name": "ขอนแก่น", "abbreviation": "KKN"},
+    {"name": "นครราชสีมา", "abbreviation": "NMA"},
+    {"name": "อุดรธานี", "abbreviation": "UDN"},
+    {"name": "นครศรีธรรมราช", "abbreviation": "NST"},
+    {"name": "สุราษฎร์ธานี", "abbreviation": "SNI"},
+    {"name": "อุบลราชธานี", "abbreviation": "UBN"},
+    {"name": "สงขลา", "abbreviation": "SKA"}
+]

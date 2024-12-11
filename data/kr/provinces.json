@@ -1,0 +1,19 @@
+[
+    {"name": "서울특별시", "abbreviation": "SEL"},
+    {"name": "부산광역시", "abbreviation": "PUS"},
+    {"name": "대구광역시", "abbreviation": "TAE"},
+    {"name": "인천광역시", "abbreviation": "ICN"},
+    {"name": "광주광역시", "abbreviation": "KWJ"},
+    {"name": "대전광역시", "abbreviation": "TJN"},
+    {"name": "울산광역시", "abbreviation": "USN"},
+    {"name": "세종특별자치시", "abbreviation": "SJN"},
+    {"name": "경기도", "abbreviation": "KGI"},
+    {"name": "강원도", "abbreviation": "KWN"},
+    {"name": "충청북도", "abbreviation": "CBK"},
+    {"name": "충청남도", "abbreviation": "CHN"},
+    {"name": "전라북도", "abbreviation": "JBK"},
+    {"name": "전라남도", "abbreviation": "JNM"},
+    {"name": "경상북도", "abbreviation": "GBK"},
+    {"name": "경상남도", "abbreviation": "GNM"},
+    {"name": "제주특별자치도", "abbreviation": "JEJ"}
+]

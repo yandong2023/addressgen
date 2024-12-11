@@ -1,0 +1,22 @@
+[
+    {"name": "台北市", "abbreviation": "TPE"},
+    {"name": "新北市", "abbreviation": "NTP"},
+    {"name": "桃园市", "abbreviation": "TYC"},
+    {"name": "台中市", "abbreviation": "TXG"},
+    {"name": "台南市", "abbreviation": "TNN"},
+    {"name": "高雄市", "abbreviation": "KHH"},
+    {"name": "基隆市", "abbreviation": "KEE"},
+    {"name": "新竹市", "abbreviation": "HSC"},
+    {"name": "嘉义市", "abbreviation": "CYI"},
+    {"name": "新竹县", "abbreviation": "HSH"},
+    {"name": "苗栗县", "abbreviation": "MIA"},
+    {"name": "彰化县", "abbreviation": "CHA"},
+    {"name": "南投县", "abbreviation": "NAN"},
+    {"name": "云林县", "abbreviation": "YUN"},
+    {"name": "嘉义县", "abbreviation": "CYQ"},
+    {"name": "屏东县", "abbreviation": "PIF"},
+    {"name": "宜兰县", "abbreviation": "ILA"},
+    {"name": "花莲县", "abbreviation": "HUA"},
+    {"name": "台东县", "abbreviation": "TTT"},
+    {"name": "澎湖县", "abbreviation": "PEN"}
+]

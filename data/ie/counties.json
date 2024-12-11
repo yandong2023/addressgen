@@ -1,0 +1,17 @@
+[
+    {"name": "Dublin", "abbreviation": "D"},
+    {"name": "Cork", "abbreviation": "C"},
+    {"name": "Galway", "abbreviation": "G"},
+    {"name": "Limerick", "abbreviation": "L"},
+    {"name": "Waterford", "abbreviation": "W"},
+    {"name": "Antrim", "abbreviation": "ANT"},
+    {"name": "Kerry", "abbreviation": "KY"},
+    {"name": "Mayo", "abbreviation": "MO"},
+    {"name": "Donegal", "abbreviation": "DL"},
+    {"name": "Wicklow", "abbreviation": "WW"},
+    {"name": "Clare", "abbreviation": "CE"},
+    {"name": "Wexford", "abbreviation": "WX"},
+    {"name": "Kilkenny", "abbreviation": "KK"},
+    {"name": "Louth", "abbreviation": "LH"},
+    {"name": "Kildare", "abbreviation": "KE"}
+]

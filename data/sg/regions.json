@@ -1,0 +1,7 @@
+[
+    {"name": "Central Region", "abbreviation": "CR"},
+    {"name": "East Region", "abbreviation": "ER"},
+    {"name": "North Region", "abbreviation": "NR"},
+    {"name": "North-East Region", "abbreviation": "NER"},
+    {"name": "West Region", "abbreviation": "WR"}
+]
