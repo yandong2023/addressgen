@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite --mode development",
     "start": "node server.js",
-    "build": "vite build --mode production",
-    "build:css": "tailwindcss -i ./input.css -o ./style.css --watch",
+    "build": "vite build --mode production && npm run build:css",
+    "build:css": "tailwindcss -i ./input.css -o ./style.css",
     "preview": "vite preview"
   },
   "dependencies": {
