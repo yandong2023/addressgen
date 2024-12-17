@@ -1,0 +1,82 @@
+{
+    "regions": [
+        {
+            "name": "England",
+            "cities": [
+                "London",
+                "Manchester",
+                "Birmingham",
+                "Liverpool",
+                "Leeds",
+                "Newcastle",
+                "Bristol",
+                "Oxford",
+                "Cambridge",
+                "Southampton"
+            ]
+        },
+        {
+            "name": "Scotland",
+            "cities": [
+                "Edinburgh",
+                "Glasgow",
+                "Aberdeen",
+                "Dundee",
+                "Inverness",
+                "Perth",
+                "St Andrews"
+            ]
+        },
+        {
+            "name": "Wales",
+            "cities": [
+                "Cardiff",
+                "Swansea",
+                "Newport",
+                "Bangor",
+                "Aberystwyth",
+                "Wrexham"
+            ]
+        },
+        {
+            "name": "Northern Ireland",
+            "cities": [
+                "Belfast",
+                "Derry",
+                "Lisburn",
+                "Bangor",
+                "Newry"
+            ]
+        }
+    ],
+    "streets": [
+        "High Street",
+        "Station Road",
+        "Church Street",
+        "Victoria Road",
+        "King Street",
+        "Queen Street",
+        "Market Street",
+        "London Road",
+        "Bridge Street",
+        "Castle Road",
+        "Mill Lane",
+        "The Green",
+        "School Lane",
+        "Park Road",
+        "Albert Road",
+        "York Road",
+        "Manor Road",
+        "Church Lane",
+        "Grove Road",
+        "New Road"
+    ],
+    "postcodes": {
+        "format": "AA9A 9AA",
+        "areas": [
+            "EC", "WC", "E", "N", "NW", "SE", "SW", "W",
+            "BR", "CR", "DA", "EN", "HA", "IG", "KT", "RM",
+            "SM", "TW", "UB", "WD"
+        ]
+    }
+}

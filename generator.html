@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>地址生成器 - AddressGen</title>
+    <title>国际地址生成器 | 美国/英国/日本地址生成工具 - AddressGen</title>
+    <meta name="description" content="免费在线国际地址生成器，支持美国、英国、日本、新加坡、加拿大等多国真实地址生成。提供美国免税州查询，合规地址生成服务，海淘代购必备工具。">
+    <meta name="keywords" content="地址生成器,美国地址生成,英国地址生成,日本地址生成,国际地址,免税州,海淘地址,AddressGen">
+    <meta property="og:title" content="国际地址生成器 | 多国地址生成工具">
+    <meta property="og:description" content="免费在线国际地址生成器，支持多国真实地址生成，海淘代购必备工具">
+    <meta property="og:url" content="https://addressgen.cc/generator.html">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://addressgen.cc/generator.html">
     <link rel="stylesheet" href="/style.css">
+    <!-- 添加结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "AddressGen国际地址生成器",
+      "description": "免费在线国际地址生成器，支持美国、英国、日本、新加坡、加拿大等多国真实地址生成",
+      "applicationCategory": "工具",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CNY"
+      },
+      "featureList": [
+        "美国地址生成",
+        "英国地址生成",
+        "日本地址生成",
+        "新加坡地址生成",
+        "加拿大地址生成",
+        "免税州查询"
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -26,18 +57,34 @@
     <main class="pt-24 pb-16">
         <div class="container">
             <div class="max-w-4xl mx-auto space-y-8">
+                <!-- 添加 H1 标题 -->
+                <h1 class="text-3xl font-bold text-center mb-8">国际地址生成器</h1>
+                
+                <!-- 在主内容区域开始处添加 -->
+                <nav class="text-sm mb-8" aria-label="面包屑导航">
+                    <ol class="list-none p-0 inline-flex">
+                        <li class="flex items-center">
+                            <a href="/" class="text-primary">首页</a>
+                            <svg class="w-3 h-3 mx-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+                            </svg>
+                        </li>
+                        <li class="text-gray-500">地址生成器</li>
+                    </ol>
+                </nav>
+                
                 <!-- 地址生成器部分 -->
                 <div class="generator-card">
-                    <h2 class="text-2xl font-bold mb-6">地址生成器</h2>
+                    <h2 class="text-2xl font-bold mb-6">多国地址生成工具</h2>
                     <div class="space-y-6">
                         <div>
-                            <label class="form-label">选择国家</label>
+                            <label class="form-label">选择国家/地区</label>
                             <select id="countrySelect" class="form-select">
-                                <option value="US">美国 (United States)</option>
-                                <option value="CA">加拿大 (Canada)</option>
-                                <option value="JP">日本 (Japan)</option>
-                                <option value="SG">新加坡 (Singapore)</option>
-                                <option value="GB">英国 (United Kingdom)</option>
+                                <option value="US">美国地址生成 (United States)</option>
+                                <option value="CA">加拿大地址生成 (Canada)</option>
+                                <option value="JP">日本地址生成 (Japan)</option>
+                                <option value="SG">新加坡地址生成 (Singapore)</option>
+                                <option value="GB">英国地址生成 (United Kingdom)</option>
                             </select>
                         </div>
                         <button id="generateBtn" class="btn-primary w-full">
@@ -49,11 +96,35 @@
                     </div>
                 </div>
 
+                <!-- 在地址生成器卡片下方添加说明文本 -->
+                <div class="mt-8 space-y-4 text-gray-600">
+                    <h3 class="text-xl font-semibold">支持的地址生成服务</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>美国地址生成</strong>：支持全美50个州，包括免税州地址生成</li>
+                        <li><strong>英国地址生成</strong>：覆盖英格兰、苏格兰、威尔士等地区</li>
+                        <li><strong>日本地址生成</strong>：支持东京、大阪等主要城市地址</li>
+                        <li><strong>新加坡地址生成</strong>：覆盖全岛各区域地址</li>
+                        <li><strong>加拿大地址生成</strong>：支持所有省份地址生成</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-semibold mt-6">地址生成器特点</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>真实有效的地址格式</li>
+                        <li>支持多国邮编规则</li>
+                        <li>适合海淘转运使用</li>
+                        <li>免费无限次使用</li>
+                    </ul>
+                </div>
+
                 <!-- 免税州查询部分 -->
                 <div class="generator-card">
-                    <h2 class="text-2xl font-bold mb-6">美国免税州查询</h2>
+                    <h2 class="text-2xl font-bold mb-6">美国免税州地址查询</h2>
                     <div class="space-y-6">
-                        <p class="text-gray-600">查看美国所有免税州及相关信息</p>
+                        <p class="text-gray-600">
+                            查询美国所有免税州(No Sales Tax States)及详细地址信息，
+                            包括阿拉斯加(Alaska)、特拉华州(Delaware)、蒙大拿州(Montana)、
+                            新罕布什尔州(New Hampshire)、俄勒冈州(Oregon)等免税州信息。
+                        </p>
                         <button id="taxFreeBtn" class="btn-primary w-full bg-green-600 hover:bg-green-700">
                             查看免税州列表
                         </button>
