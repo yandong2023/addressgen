@@ -6,11 +6,14 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      // 开发环境代理配置
       '/api': {
         target: 'http://localhost:3001',
         changeOrigin: true,
       }
     }
+  },
+  root: './',
+  build: {
+    outDir: 'dist'
   }
 }) 
