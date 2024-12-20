@@ -17,6 +17,10 @@
         {
             "src": "*.css",
             "use": "@vercel/static"
+        },
+        {
+            "src": "sitemap.xml",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
@@ -31,6 +35,10 @@
         {
             "src": "/js/(.*)",
             "dest": "/js/$1"
+        },
+        {
+            "src": "/sitemap.xml",
+            "dest": "/sitemap.xml"
         },
         {
             "handle": "filesystem"
