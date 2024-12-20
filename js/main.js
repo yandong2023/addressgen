@@ -1,5 +1,5 @@
 // API endpoints
-const API_BASE_URL = 'http://localhost:3001/api';
+const API_BASE_URL = '/api';
 
 document.addEventListener('DOMContentLoaded', () => {
     // 检查当前页面是否是工具页面

@@ -206,27 +206,26 @@ app.get('/api/tax-free-states', (req, res) => {
 });
 
 // 落地页路由
-app.get('/landing/:country', async (req, res) => {
-    try {
-        const { country } = req.params;
-        if (!SUPPORTED_COUNTRIES[country.toLowerCase()]) {
-            return res.status(404).send('国家不存在');
-        }
-        
-        const content = await generateLandingPageContent(country.toLowerCase());
-        res.send(content);
-    } catch (error) {
-        console.error('生成落地页时出错:', error);
-        res.status(500).send('生成落地页时出错');
-    }
-});
-
-app.get('/:country', async (req, res) => {
+app.get('/:country', async (req, res, next) => {
     const country = req.params.country.toLowerCase();
-    if (SUPPORTED_COUNTRIES[country]) {
-        res.send(await generateLandingPageContent(country));
+    
+    // 如果是静态资源或API路由，跳过处理
+    if (country.startsWith('api') || country.startsWith('css') || country.startsWith('js')) {
+        return next();
+    }
+    
+    // 移除.html后缀（如果有）
+    const cleanCountry = country.replace(/\.html$/, '');
+    
+    if (SUPPORTED_COUNTRIES[cleanCountry]) {
+        // 如果URL不包含.html后缀，进行301永久重定向
+        if (!country.endsWith('.html')) {
+            return res.redirect(301, `/${cleanCountry}.html`);
+        }
+        res.send(await generateLandingPageContent(cleanCountry));
     } else {
-        res.redirect('/');
+        // 返回404状态码而不是重定向
+        res.status(404).send('Page Not Found');
     }
 });
 
